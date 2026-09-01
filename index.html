@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workbench — small tools, done well</title>
+<meta name="description" content="Free browser tools: word counter, password generator, unit converter, color converter, QR code generator, and BMI calculator. No sign-up, nothing stored.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ruler" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a class="brand" href="#/">
+    <span class="brand-mark">＋</span>
+    <span class="brand-name">Workbench</span>
+  </a>
+  <p class="brand-tag">six small tools. nothing saved. nothing to sign up for.</p>
+</header>
+
+<div class="layout">
+
+  <nav class="bench" aria-label="Tools">
+    <span class="bench-label">tools</span>
+    <ul class="bench-list" id="bench-list">
+      <li><a href="#/words" data-tool="words"><span class="tick">01</span>Word counter</a></li>
+      <li><a href="#/password" data-tool="password"><span class="tick">02</span>Password generator</a></li>
+      <li><a href="#/units" data-tool="units"><span class="tick">03</span>Unit converter</a></li>
+      <li><a href="#/color" data-tool="color"><span class="tick">04</span>Color converter</a></li>
+      <li><a href="#/qr" data-tool="qr"><span class="tick">05</span>QR code generator</a></li>
+      <li><a href="#/bmi" data-tool="bmi"><span class="tick">06</span>BMI calculator</a></li>
+    </ul>
+  </nav>
+
+  <main class="stage" id="stage">
+    <!-- Views are injected here by app.js -->
+  </main>
+
+  <aside class="ad-rail">
+    <div class="ad-slot" id="ad-slot-side">
+      <span>ad space</span>
+    </div>
+  </aside>
+
+</div>
+
+<div class="ad-slot ad-slot--footer" id="ad-slot-footer">
+  <span>ad space</span>
+</div>
+
+<footer class="site-foot">
+  <p>Everything on this page runs in your browser. Nothing you type is sent anywhere or stored.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
